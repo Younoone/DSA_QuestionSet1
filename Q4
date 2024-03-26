@@ -1,0 +1,19 @@
+public class Solution
+{
+    public static int[] printNos(int x) {
+        // Write Your Code Here
+        int[] arr = new int[x];
+        recursiveFunction(x,arr);
+
+        return arr;
+    }
+    static void recursiveFunction(int n,int[] arr){
+        if(n==0){
+            return;
+        }
+        else{
+            arr[arr.length-n]=n;
+            recursiveFunction(n-1, arr);
+        }
+    }
+}
