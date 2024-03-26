@@ -1,0 +1,16 @@
+import java.util.List;
+import java.util.ArrayList;
+public class Solution {
+    static ArrayList<Long> List = new ArrayList<>();
+    static long fact = 1;
+    static long i = 2;
+    public static List<Long> factorialNumbers(long n){
+        // Write Your Code Here
+        while(fact<=n){
+            List.add(fact);
+            fact = fact*i;
+            i++;
+        }
+        return List;
+    }
+}
