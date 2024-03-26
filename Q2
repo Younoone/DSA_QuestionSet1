@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+public class Solution {
+    static ArrayList<String> List = new ArrayList<String>();
+    public static List<String> printNtimes(int n){
+        // Write your code here. ArrayList<String> List = new ArrayList<String>();
+        if(n>0){
+            List.add("Coding Ninjas");
+            printNtimes(n-1);
+        }
+        return List;
+    }
+}
